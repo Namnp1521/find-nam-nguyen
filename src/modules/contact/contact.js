@@ -32,7 +32,7 @@ function Contact(props) {
 
   return (
     <div className="contact" id="contact">
-      <div className="container flex-column" style={{ position: "relative" }}>
+      <div className="flex-column" style={{ position: "relative" }}>
         <Sketch />
         <Fade right duration={1000} delay={500}>
           <div className="title color-white">CONTACT</div>
