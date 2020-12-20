@@ -1,0 +1,129 @@
+@import "../../shared/assets/css/common.scss";
+
+.about {
+  padding: 50px 0 130px 0;
+
+  .content {
+    align-items: center;
+
+    .skill {
+      width: 100%;
+      box-sizing: border-box;
+      padding: 0 70px 0 70px;
+      margin: 50px auto 0 auto;
+
+      .skill-element {
+        width: 100%;
+        height: 30px;
+        margin: 5px 0;
+        font-size: 14px;
+        font-weight: 500;
+
+        .name {
+          display: flex;
+          justify-content: space-between;
+
+          :last-child {
+            color: $color-pink;
+          }
+        }
+
+        .bar {
+          width: 100%;
+          height: 5px;
+          background-color: $color-light;
+          margin-top: 3px;
+          border-radius: 3px;
+
+          .bar-percent {
+            height: 100%;
+            border-radius: 3px;
+            background-color: $color-pink;
+            box-shadow: 0 0 10px #f688bb;
+          }
+        }
+      }
+    }
+    .avatar {
+      box-sizing: border-box;
+      padding: 0 70px 0 70px;
+
+      .cover-avatar {
+        width: 250px;
+        height: 250px;
+        border-radius: 50%;
+        padding: 3px;
+        box-sizing: border-box;
+        background-color: $color-pink;
+        box-shadow: 0 0 10px #f688bb;
+        img {
+          width: 100%;
+          height: 100%;
+          border-radius: 50%;
+          // margin: -15px;
+          box-sizing: border-box;
+          border: 3px solid #fff;
+        }
+      }
+
+      .avatar-detail {
+        margin-top: 30px;
+        font-size: 10px;
+        line-height: 15px;
+        text-align: center;
+        color: $color-gray;
+
+        .question {
+          font-size: 24px;
+          font-weight: 700;
+          margin-bottom: 20px;
+          color: #000;
+        }
+
+        a {
+          color: $color-pink;
+          text-decoration: none;
+          font-weight: 500;
+          cursor: pointer;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+}
+
+// responsive
+@media screen and (min-width: 700px) {
+  .about {
+    .content {
+      flex-direction: row;
+      align-items: flex-start;
+
+      .avatar,
+      .skill {
+        max-width: 50%;
+      }
+
+      .skill {
+        margin: 0px;
+      }
+    }
+  }
+}
+
+// responsive
+@media screen and (min-width: 600px) {
+  .about {
+    .content {
+      .avatar {
+        .avatar-detail {
+          font-size: 14px;
+          line-height: 20px;
+        }
+      }
+    }
+  }
+}

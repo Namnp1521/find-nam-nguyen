@@ -1,0 +1,132 @@
+@import "../../shared/assets/css/common.scss";
+
+.contact {
+  padding: 50px 0 0 0;
+  background-color: #000;
+
+  .content {
+    width: 100%;
+    position: relative;
+
+    .socials {
+      width: 100%;
+      margin-top: 70px;
+      background-color: #000;
+      padding-top: 60px;
+      position: relative;
+      box-shadow: 0 0 10px #f688bb;
+
+      .up {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-color: $color-pink;
+        text-align: center;
+        cursor: pointer;
+        font-size: 20px;
+        box-sizing: border-box;
+        padding-top: 14px;
+        position: absolute;
+        top: -25px;
+        left: 50%;
+        transform: translateX(-50%);
+        box-shadow: 0 0 10px #f688bb;
+      }
+
+      .social-item {
+        width: 50px;
+        height: 50px;
+        background-color: #000;
+        margin: 0px 15px;
+        // border-radius: 5px;
+        border: 1px solid #fff;
+        position: relative;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+
+        .icon {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translateX(-50%) translateY(-50%);
+          font-size: 20px;
+          color: #fff;
+          transition: all 0.3s ease-in-out;
+        }
+
+        &:hover {
+          box-shadow: 0 0 7px $color-blue, 0 0 7px $color-blue inset;
+          border: 1px solid $color-blue;
+
+          .icon {
+            filter: drop-shadow(0 0 2px $color-blue);
+            color: $color-blue;
+            transform: scale(1.5) rotate(-45deg) translateY(-50%);
+          }
+        }
+      }
+    }
+
+    .copyright {
+      font-size: 12px;
+      color: $color-gray;
+      margin-top: 40px;
+      padding-bottom: 50px;
+
+      span {
+        color: $color-pink;
+        margin-left: 5px;
+        letter-spacing: 1px;
+        opacity: 0.7;
+      }
+    }
+
+    .email {
+      .question {
+        font-size: 14px;
+        color: $color-pink;
+        text-shadow: 0 0 7px $color-pink;
+        margin-bottom: 30px;
+      }
+
+      form {
+        min-width: 500px;
+        margin-top: 20px;
+
+        input,
+        textarea {
+          background: #1e242c;
+          border: 0;
+          box-sizing: border-box;
+          color: #fff;
+          display: block;
+          font-size: 14px;
+          margin-bottom: 3px;
+          outline: none;
+          padding: 10px 15px;
+          width: 100%;
+        }
+        textarea {
+          margin-bottom: 5px;
+          min-height: 150px;
+        }
+
+        .submit {
+          border: 2px solid #e8f9e9;
+          cursor: pointer;
+          font-size: 13px;
+          color: #e8f9e9;
+          padding: 10px 20px;
+          align-self: flex-end;
+          transition: all 0.5s;
+
+          &:hover {
+            background-color: $color-blue;
+            border-color: $color-blue;
+            color: #000;
+          }
+        }
+      }
+    }
+  }
+}
