@@ -28,9 +28,9 @@ function About(props) {
             </div>
             <div className="avatar-detail">
               <div className="question">Who's this guy?</div>
-              I'm a Front-End Developer for{" "}
-              <a href="https://www.luvina.net/" target="_blank">
-                Luvina JSC
+              I'm a Mobile Developer for{" "}
+              <a href="https://www.fpt-software.com/" target="_blank">
+                FPT Software
               </a>{" "}
               in Hanoi, VN.
               <br />

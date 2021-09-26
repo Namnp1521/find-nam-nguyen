@@ -17,7 +17,7 @@ export const SKILLS = [
   },
   {
     name: "React Native",
-    percent: "80%",
+    percent: "95%",
   },
   {
     name: "Java/Native Android",

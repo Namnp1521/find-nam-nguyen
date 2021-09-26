@@ -82,6 +82,8 @@
     }
 
     .email {
+      width: 70%;
+
       .question {
         font-size: 14px;
         color: $color-pink;
@@ -90,7 +92,8 @@
       }
 
       form {
-        min-width: 500px;
+        width: 100%;
+        max-width: 500px;
         margin-top: 20px;
 
         input,
