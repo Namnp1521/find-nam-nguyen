@@ -13,7 +13,9 @@ function Blog(props) {
       <Fade left duration={1000} delay={1000}>
         <div className="underline" />
       </Fade>
-      <div className="content flex-row"></div>
+      <div className="content flex-row">
+        <span>Updating...</span>
+      </div>
     </div>
   );
 }

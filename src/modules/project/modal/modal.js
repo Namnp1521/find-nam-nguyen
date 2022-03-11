@@ -58,11 +58,8 @@ function Modal(props) {
         </div>
         <div className="detail">
           <div className="title">{data.name}</div>
-          <div className="sub-title">The Art of Pen Spinning</div>
-          <div className="content">
-            With Spinee, everybody can know and learn about the art of pen
-            spinning.
-          </div>
+          <div className="sub-title">{data.des1}</div>
+          <div className="content">{data.des2}</div>
           <div className="view flex-row" onClick={handleGoLink}>
             <FaExternalLinkSquareAlt className="icon" />
             VIEW APP
